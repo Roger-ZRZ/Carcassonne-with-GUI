@@ -15,4 +15,4 @@ You may close the game at any time;
 
 You may use gradle run to start a game directly from the terminal; 
 
-NOTE: The scaling system is designed to scale the board actively to your resolution; this feature is only tested on windows; if you are using MacOS or Linux, and is experiencing the board window behaving strangely or the layout being messed up, please contact me at ruizhezh@andrew.cmu.edu, or simply remove the Toolkit.getResolution() part and try again; 
+NOTE: The scaling system is designed to scale the board actively to your resolution; this feature is only tested on windows; if you are using MacOS or Linux, and is experiencing the board window behaving strangely or the layout being messed up, please contact me via github, or simply remove the Toolkit.getResolution() part and try again; 
