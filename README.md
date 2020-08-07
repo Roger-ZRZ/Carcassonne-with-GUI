@@ -1,3 +1,5 @@
+![](Carcass_Demo_Pic.png)
+
 The game is straightforward to play; 
 First, enter the name of the participants;
 All names must be distinct and the number of names must be more than 1 and less than 6; 
