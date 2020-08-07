@@ -15,6 +15,18 @@ configurations.all {
   }
 }
 
+version = '1.0'
+task makeJar(type: Jar) {
+  manifest {
+    attributes 'Test': 'Jar File',
+            'Version': version,
+            'Main-Class': 'edu.cmu.cs.cs214.hw4.GUIMain'
+  }
+  baseName = 'Carcasonne'
+  from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+  with jar
+}
+
 // check.doFirst {
 //   List<String> missing = new ArrayList<>();
 //   for (name in [ "domain.pdf",
@@ -83,7 +95,7 @@ task run(type: JavaExec) {
   group = 'run' // <-- change the name as per your need
   description = 'RUN'
 
-  classpath sourceSets.main.runtimeClasspath 
+  classpath sourceSets.main.runtimeClasspath
   main = "edu.cmu.cs.cs214.hw4.GUIMain"
   args "arg1", "arg2"
 }
